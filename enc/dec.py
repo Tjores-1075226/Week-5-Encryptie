@@ -26,4 +26,21 @@ def decrypt_message(encrypted_message):
     decrypted_message = fernet.decrypt(encrypted_message).decode()
     return decrypted_message
 
+# Programma
+if __name__ == "__main__":
+    keuze = input("Wil je een nieuwe sleutel maken (g) of een bericht versleutelen/ontsleutelen (v/o)? ").lower()
+
+    if keuze == "g":
+        generate_key()
+    elif keuze == "v":
+        bericht = input("Voer het bericht in dat je wilt versleutelen: ")
+        versleuteld = encrypt_message(bericht)
+        print(f"Versleuteld bericht: {versleuteld}")
+    elif keuze == "o":
+        encrypted_message = input("Voer de versleutelde tekst in: ")
+        ontsleuteld = decrypt_message(encrypted_message.encode())
+        print(f"Ontsleuteld bericht: {ontsleuteld}")
+    else:
+        print("Ongeldige keuze.")
+
 
