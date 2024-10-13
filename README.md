@@ -4,10 +4,10 @@
 
 # Stap 1: onderzoek
 Symmetrische Encryptie
-Symmetrische encryptie is een gegevensversleuteling waarbij dezelfde sleutel wordt gebruikt voor zowel het versleutelen als het ontsleutelen van informatie.
+Symmetrische encryptie is een gegevensversleuteling waarbij dezelfde sleutel wordt gebruikt voor het versleutelen en het ontsleutelen van informatie.
 Voordelen van symmetrische encryptie:
 
-Het is snel en efficiënt, vooral voor het versleutelen van grote hoeveelheden gegevens.
+Het is snel en goed, vooral voor het versleutelen van grote gegevens.
 Nadelen:
 
 Als de sleutel wordt onderschept, kan een aanvaller zowel de versleutelde als de ontsleutelde gegevens verkrijgen.
@@ -24,3 +24,16 @@ Asymmetrische encryptie is over het algemeen trager dan symmetrische encryptie e
 # Stap 2: Implenmentatie
 
 installeren van de python omgeving kun je doen door hetvolgende command uit te voeren: pip install -r requirements.txt
+Hierna heb ik in het programma gebruik gemaakt van de fernet module.
+
+# Stap 3: Documentatie
+
+Met deze app is het mogelijk om berichten te versleutelen en ontsleutelen door middel van symmetrische encryptie.
+ik heb hiervoor gebruik gemaakt van de cryptography bieb in python.
+Je kan in deze app:
+Sleutel Genereren
+Bericht Versleutelen
+Bericht Ontsleutelen
+
+Je kan de app gebruiken door de dec.py file te runnen en hierna het menu te volgen.
+Zorg wel dat je van te voren de requirements hebt geinstalleerd.
